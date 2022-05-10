@@ -42,3 +42,11 @@ _______________                        ┆ [7]
 |──────────────|
 |______________|
 ```
+0. Das erste was der Client (Computer) nach dem Aufrufen einer Website wie z.B. `http://www.example.com ist, dass er in seinem internen DNS cach nachsaut ob da die IP Adresse bereits aufgelöst ist. Falss dies der Fall ist könnten Punkt 1-5 geskipt werden.
+1. Falls der Client den DNS Namen nicht kennt sendet er eine DNS anfrage an den Rooter.
+2. Der Rooter leitet anschlissend diese Anfrage weiter an den Root DNS Server
+3. Der Root DNS Server kennt die IP Adresse selber nicht, er weiss aber dass es sich dabei ume eine `.com` Adresse handelt. Also leitet er diese weiter an den `.com` DNS Server. Falls dieser auch nicht die IP-Adresse Auflösung kennt leitet er die Anfrage auch weiter an einen Sub DNS Server. 
+4. Aanschlissend wird der DNS Response wieder zurück an den Rooter vom Client gesendet.
+5. Der Rooter leitet diese dann weiter an den Client. Nun kennt der Client die IP Adresse vom Server.
+6. Anschlissend sendet der Client eine Anfrage an die bennante IP Adresse. Der Rooter überprüft nun ob es sich dabei um eine Private (Interne) oder eine Öffentliche (Externe) IP-Adresse handelt.
+7. Je nachdem um welchen IP-Adress Typ es handelt wird die IP-Adresse an einen Öffentlichen oder einen Privaten Server weitergeleitet
