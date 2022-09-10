@@ -1,4 +1,8 @@
 ﻿# Lernjournal
+ Lernjournal für das Modul 293 Webauftritt erstellen und veröffentlichen. 
+ Endnote im Modul: `6`
+ 
+ 
 - [29.04.22](./src/29.04.22.md)
 - [06.05.22](./src/06.05.22.md)
 - [12.05.22](./src/12.05.22.md)
