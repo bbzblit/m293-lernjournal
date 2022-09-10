@@ -1,4 +1,4 @@
-﻿# Lernjournal
+﻿# Modul-293-lernjournal
  Lernjournal für das Modul 293 Webauftritt erstellen und veröffentlichen. 
  Endnote im Modul: `6`
  
